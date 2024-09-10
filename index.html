@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Iphone</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>iPhone Outline with Dynamic Island</title>
+<style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .iphone {
+            width: 200px; /* Width of the iPhone */
+            height: 400px; /* Height of the iPhone */
+            border: 6px solid #000; /* Outline color and thickness */
+            border-radius: 30px; /* Rounded corners */
+            position: relative;
+            background-color: #fff; /* Background color of the iPhone */
+        }
+        .screen {
+            width: 100%;
+            height: 100%;
+            border-radius: 24px; /* Match the iPhone's rounded corners */
+            background-color: #e0e0e0; /* Color of the screen */
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .notch {
+            width: 75px; /* Width of the notch */
+            height: 20px; /* Height of the notch */
+            background-color: #000000; /* Notch color */
+            position: absolute;
+            top: 5px;
+            z-index: 9;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 10px; /* Rounded notch */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for the notch */
+        }
+        .home-button {
+            width: 70px; /* Width of the home button */
+            height: 3px; /* Height of the home button */
+            background-color: #000; /* Home button color */
+            position: absolute;
+            bottom: 4px; /* Position from the bottom */
+            left: 50%;
+            z-index: 9;
+            transform: translateX(-50%);
+            border-radius: 10px; /* Rounded home button */
+        }
+</style>
+</head>
+<body>
+ 
+<div class="iphone">
+<div class="screen"></div>
+<div class="notch"></div>
+<div class="home-button"></div>
+</div>
+ 
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
